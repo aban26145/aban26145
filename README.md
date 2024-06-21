@@ -1,12 +1,18 @@
-- 👋 Hi, I’m @aban26145
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-
-<!---
-aban26145/aban26145 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+const sha256 =require('sha256');
+function Blockchain (){
+      this.chain=[];
+this.createNewBlock(100,'500','100');
+}
+Blockchain.prototype.creatNewBlock=function(nonce,            prevBlockhash,hash){
+     const newBlock ={
+       index:this.chain.length+1,
+       timestamp: this.pendingTransaction,
+       nonce:nonce,
+       prevBlockhash: prevBlockhash,
+       hash:hash,
+  };
+this.pendingTransaction=[];
+this.chain.push(newBlock);
+        return newBlock;
+}
+             
